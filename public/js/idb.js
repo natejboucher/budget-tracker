@@ -44,7 +44,7 @@ function uploadBudget() {
   const transaction = db.transaction(["new_budgetItem"], "readwrite");
 
   // access your object store
-  const budgetObjectStore = transaction.objectStore("new_pizza");
+  const budgetObjectStore = transaction.objectStore("new_budgetItem");
 
   // get all records from store and set to a variable
   const getAll = budgetObjectStore.getAll();
